@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-custom {
+  overflow-y: auto;
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #FFFFFF transparent; /* Set the thumb and track color */
+}
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scrollbar */
+  margin: 1px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF; /* Set the thumb color */
+  border-radius: 1px; /* Make the thumb rounded */
+  max-width: 1px;
+  min-width: 1px;
+  padding:2px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the track color */
+   border-radius: 10px; /*Make the track rounded */
+}
+
+.scrollbar-custom::-webkit-scrollbar-button {
+  display:none; /* Completely hide the scroll buttons */
+}
+
+
+
+
+
+/* Custom styles for DatePicker */
+.custom-datepicker {
+  background-color: #19202b; /* Set the entire background color to dark gray */
+  color: white !important;/* Set the text color to white */
+}
+
+/* Header: Month and Year in the top-left */
+.custom-datepicker .react-datepicker__header {
+  background-color: #19202b; /* Dark gray background for the header */
+  padding: 0 1rem; /* Add some padding for spacing */
+}
+
+.custom-datepicker .react-datepicker__current-month {
+  text-align: left; /* Align the month/year to the left */
+}
+
+.custom-datepicker .react-datepicker__month {
+  background-color: #19202b; /* Make the month grid background dark gray */
+}
+
+
+
+
+/* Additional styling for individual days (optional) */
+.custom-datepicker .react-datepicker__day {
+  border-radius: 50%;
+  color: white; /* Circular shape for the days */
+  
+}
+
+.custom-datepicker .react-datepicker__day:hover {
+  border-radius: 50% !important;
+  color: rgb(0, 0, 0); /* Circular shape for the days */
+  
+}
+
+
+
+/* Customize the year dropdown if present */
+.custom-datepicker .react-datepicker__month {
+padding: 0;
+margin: 0;
+}
+
+.custom-datepicker .react-datepicker__day-name {
+  color: rgb(175, 165, 165) !important;
+  }
+
+
+
+:root {
+  --background: #111827;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
