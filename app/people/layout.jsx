@@ -171,8 +171,8 @@ const Layout = ({children}) => {
                                     <p className="text-[12px] text-white">Edit Team</p>
                                   </div>
 
-                                  <div className="flex items-center justify-between px-2 cursor-pointer">
-                                    <div onClick={()=>setIsSelectTeamPopupOpen(true)} className='flex items-center space-x-2'>
+                                  <div onClick={()=>setIsSelectTeamPopupOpen(true)} className="flex items-center justify-between px-2 cursor-pointer">
+                                    <div  className='flex items-center space-x-2'>
                                     <MdGroups size={24} className="text-[#00C7BE]" />
                                     <p className="text-[12px] text-white">Team Members</p>
                                     </div>
